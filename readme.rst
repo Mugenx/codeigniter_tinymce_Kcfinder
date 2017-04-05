@@ -1,5 +1,5 @@
 ###################
-codeigniter_tinymce_Kcfinder
+Codeigniter+Tinymce+Kcfinder
 ###################
 test tinymce 4 + Kcfiner with codeigniter framework.
 
