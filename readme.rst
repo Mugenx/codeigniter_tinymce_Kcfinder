@@ -3,6 +3,8 @@ Codeigniter+Tinymce+Kcfinder
 ###################
 test tinymce 4 + Kcfiner with codeigniter framework.
 
+live version: http://saha.design/tinymce/
+
 ************
 Installation
 ************
