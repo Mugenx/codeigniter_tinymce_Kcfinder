@@ -14,9 +14,9 @@ of the CodeIgniter User Guide.
 Database setup
 ************
 
-db:tiny_
-table:display_
-column:id,content_
+db:tiny\n
+table:display
+column:id,content
 
 *******
 License
