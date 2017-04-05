@@ -14,8 +14,10 @@ of the CodeIgniter User Guide.
 Database setup
 ************
 
-db:tiny\n
+db:tiny
+
 table:display
+
 column:id,content
 
 *******
