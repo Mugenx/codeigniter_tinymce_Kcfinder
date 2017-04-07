@@ -34,15 +34,17 @@
 				return false;
 			},
 			selector:'textarea',
+			menubar:false,
 			height : "350",
 			plugins: [
-			'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+			'save advlist autolink lists link image charmap print preview hr anchor pagebreak',
 			'searchreplace wordcount visualblocks visualchars code fullscreen',
 			'insertdatetime media nonbreaking save table contextmenu directionality',
-			'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc'
+			'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc spellchecker '
 			],
-			toolbar1: 'undo redo | insert | styleselect | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media | codesample',
-			toolbar2: ' bold italic formatselect fontselect fontsizeselect forecolor backcolor ',
+			toolbar1: 'code | save preview print | template | cut copy paste | undo redo | searchreplace spellchecker | insert | link unlink anchor | image media | codesample ',
+			toolbar2: ' alignleft aligncenter alignright alignjustify | bullist numlist | blockquote ltr rtl | outdent indent | charmap pagebreak table | fullscreen visualblocks',
+			toolbar3:'bold italic underline strikethrough subscript superscript removeformat formatselect fontselect fontsizeselect forecolor backcolor',
 			image_advtab: true,
 			templates: [
 			{ title: 'Test template 1', content: 'Test 1' },
@@ -61,7 +63,7 @@
 	<div class="container" style="margin-top: 100px">
 		<div class="col-lg-10 col-lg-offset-1">
 			<!-- form -->
-			<form action="http://localhost/tiny/" method="post" accept-charset="utf-8">
+			<form action="<?php echo base_url('index.php/submit'); ?>" method="post" accept-charset="utf-8">
 				<textarea id="content" name="content"><?php echo $content ?></textarea> 
 				<button name='go' type="submit" value="Submit" class="btn btn-primary"
 				name="button" style="width: 100%; margin-top: 5px" >SUBMIT</button>
@@ -69,7 +71,9 @@
 
 
 			<!-- display -->
-			<div style="background-color:#f0f0f0; margin: 50px auto 200px; padding: 50px"><?php echo $content ?></div>
+			<div style="background-color:#f0f0f0; margin: 50px auto 50px; padding: 50px"><?php echo $content ?></div>
+
+			<div align="center" style="margin: 20px auto 200px;"><a href="<?php echo base_url('index.php/original') ?>"<?php  ?>>GO BACK TO ORIGINAL</a></div>
 		</div>
 
 		

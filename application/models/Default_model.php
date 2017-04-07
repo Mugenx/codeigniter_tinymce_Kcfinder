@@ -10,6 +10,7 @@ class Default_model extends CI_Model {
 	public function get_display(){
 
 		$this->db->select('content');
+		$this->db->where('id', 1);
 		$query = $this->db->get('display');
 		$ret = $query->row();
 		return $ret->content;
@@ -20,7 +21,8 @@ class Default_model extends CI_Model {
 			'id' => 1,
 			'content' => $content
 			);
-		$query = $this->db->update('display', $fields);
+		$this->db->update('display', $fields);
+		
 	}
 
 	

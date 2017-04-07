@@ -16,13 +16,17 @@
    even if you are using session configuration.
    See http://kcfinder.sunhater.com/install for setting descriptions */
 
+// $url = base_url('assets/img');
+   $url = 'upload';
+
 $_CONFIG = array(
 
 
 // GENERAL SETTINGS
 
     'disabled' => false,
-    'uploadURL' => "upload",
+    // 'uploadURL' => "upload",
+    'uploadURL' => $url,
     'uploadDir' => "",
     'theme' => "default",
 
